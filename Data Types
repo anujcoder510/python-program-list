@@ -13,7 +13,7 @@ for item in lst:
     print(item)
 
 # Dictionary
-d = {"Name": "Rajul", "Age": 20, "Course": "BCA"}
+d = {"Name": "anuj", "Age": 20, "Course": "BCA"}
 print("\nDictionary Iteration:")
 for key, value in d.items():
     print(key, ":", value)
