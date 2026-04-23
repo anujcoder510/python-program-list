@@ -4,10 +4,10 @@ conn = sqlite3.connect("student.db")
 cursor = conn.cursor()
 
 # INSERT
-cursor.execute("INSERT INTO students (name, age) VALUES (?, ?)", ("Rajul", 20))
+cursor.execute("INSERT INTO students (name, age) VALUES (?, ?)", ("anuj", 20))
 
 # UPDATE
-cursor.execute("UPDATE students SET age = 21 WHERE name = 'Rajul'")
+cursor.execute("UPDATE students SET age = 21 WHERE name = 'anuj'")
 
 # SELECT
 cursor.execute("SELECT * FROM students")
@@ -18,7 +18,7 @@ for row in rows:
     print(row)
 
 # DELETE
-cursor.execute("DELETE FROM students WHERE name = 'Rajul'")
+cursor.execute("DELETE FROM students WHERE name = 'anuj'")
 
 conn.commit()
 conn.close()
