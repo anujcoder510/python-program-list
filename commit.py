@@ -4,7 +4,7 @@ conn = sqlite3.connect("student.db")
 cursor = conn.cursor()
 
 try:
-    cursor.execute("INSERT INTO students (name, age) VALUES (?, ?)", ("Aman", 22))
+    cursor.execute("INSERT INTO students (name, age) VALUES (?, ?)", ("anuj", 22))
     
     # Force an error
     cursor.execute("INSERT INTO students (id, name, age) VALUES (1, 'Error', 25)")
